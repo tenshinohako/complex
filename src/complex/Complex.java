@@ -32,12 +32,7 @@ public class Complex {
 	}
 
 	public double getArgument() {
-		double arg = Math.atan2(imaginary, real);
-		if(arg >= 0) {
-			return arg;
-		}else {
-			return arg + Math.PI;
-		}
+		return Math.atan2(imaginary, real);
 	}
 
 	public double abs() {
